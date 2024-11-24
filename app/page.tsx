@@ -4,10 +4,10 @@ import { Unity, useUnityContext } from "react-unity-webgl";
 
 export default function Home() {
   const { unityProvider, loadingProgression, isLoaded } = useUnityContext({
-    loaderUrl: "build/myunityapp.loader.js",
-    dataUrl: "build/myunityapp.data",
-    frameworkUrl: "build/myunityapp.framework.js",
-    codeUrl: "build/myunityapp.wasm",
+    loaderUrl: "./Build/capy-game-build.loader.js",
+    dataUrl: "./Build/capy-game-build.data",
+    frameworkUrl: "./Build/capy-game-build.framework.js",
+    codeUrl: "./Build/capy-game-build.wasm",
   });
 
   return (
@@ -19,8 +19,8 @@ export default function Home() {
         unityProvider={unityProvider}
         style={{
           visibility: isLoaded ? "visible" : "hidden",
-          width: 800,
-          height: 600,
+          width: "100%",
+          height: "100%",
         }}
       />
     </Fragment>
