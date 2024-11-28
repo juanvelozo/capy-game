@@ -1,0 +1,10 @@
+{
+    "canisters": {
+        "capy-game-build": {
+            "source": [
+                "out/"
+            ],
+            "type": "assets"
+        }
+    }
+}
