@@ -6,7 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "deploy-local": "dfx deploy capy-game-build",
+    "deploy-mainnet": "dfx deploy capy-game-build --network=ic"
   },
   "dependencies": {
     "next": "15.0.3",
